@@ -1,0 +1,178 @@
+/* CSS Normalize */
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+/* Box-sizing border-box */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+    margin:0;
+   padding:0 }
+
+
+/* Some default styles to make each box visible */
+.box {
+  color:white;
+  font-size: 80px;
+  text-align: center;
+  text-shadow:4px 4px 0 rgba(0,0,0,0.1);
+  padding:6px;
+}
+
+/* Colours for each box */
+.box1 { background:#1abc9c;}
+.box2 { background:#3498db;}
+.box3 { background:#9b59b6;}
+.box4 { background:#34495e;}
+.box5 { background:#f1c40f;}
+.box6 { background:#e67e22;}
+.box7 { background:#e74c3c;}
+.box8 { background:#bdc3c7;}
+.box9 { background:#2ecc71;}
+.box10 { background:#16a085;}
+
+.flexDemo{
+    border: 1px solid plum;
+    position:relative;
+    margin:30px 0;
+}
+.codeDiv{
+    border:1px solid plum;
+}
+
+.flexDemo .codeCss
+{
+    /* background-color:papayawhip; */
+    box-sizing:border-box;
+    width: 180px;
+    height:150px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius:3px;
+    padding: 4px 2px;
+    /* Position the tooltip */
+    position: absolute;
+    top:50px;
+    left:50px;
+    z-index: 2000;
+}
+.css1,.css2,.css3,.css4,.css5,.css6,.css7,.css8,.css9,.css10,.css11,.css12{
+    visibility: hidden;
+}
+
+.container { /*flex container */
+    display:flex; 
+    border:10px solid mistyrose;
+}
+.container:hover + .css1 {
+    visibility: visible;
+  }
+.container2 { /*flex container */
+    display:inline-flex; 
+    border:10px solid goldenrod;
+}
+.container2:hover + .codeCss.css2 {
+    visibility: visible;
+  }
+.container3{
+    display:flex; 
+    justify-content:flex-start; /* content aligned to start of flex container */
+    border:10px solid mistyrose;
+}
+.container3:hover + .css3{
+    visibility: visible;
+  }
+
+.container4 { /*flex container */
+    display:flex; 
+    justify-content:flex-end;
+    border:10px solid goldenrod;
+}
+.container4:hover + .css4{
+    visibility: visible;
+}
+
+.container5 { /*flex container */
+    display:flex; 
+    justify-content:center;
+    border:10px solid goldenrod;
+}
+.container5:hover + .css5{
+    visibility: visible;
+}
+
+
+
+.container6 { /*flex container */
+    display:flex; 
+    justify-content:space-between;
+    border:10px solid goldenrod;
+}
+.container6:hover + .css6{
+    visibility: visible;
+}
+
+
+.container7  { /*flex container */
+    display:flex; 
+    justify-content:space-around;
+    border:10px solid mistyrose;
+}
+.container7:hover + .css7{
+    visibility: visible;
+}
+
+.container8{
+    display:flex; 
+    flex-direction:column;
+    min-height:100em;
+    justify-content:flex-start; /* content aligned to start of flex container */
+    border:10px solid mistyrose;
+}
+.container8:hover + .css8{
+    visibility: visible;
+}
+
+
+.container9 { /*flex container */
+    display:flex; 
+    flex-direction:column;
+    min-height:100em;
+    justify-content:flex-end;
+    border:10px solid goldenrod;
+}
+.container9:hover + .css9{
+    visibility: visible;
+}
+
+.container10 { /*flex container */
+    display:flex; 
+    flex-direction:column;
+    min-height:100em;
+    justify-content:center;
+    border:10px solid goldenrod;
+}
+.container10:hover + .css10{
+    visibility: visible;
+}
+
+.container11 { /*flex container */
+    display:flex; 
+    flex-direction:column;
+    min-height:100em;
+    justify-content:space-between;
+    border:10px solid goldenrod;
+}
+.container11:hover + .css11{
+    visibility: visible;
+}
+
+.container12{
+    display:flex; 
+    flex-direction:column;
+    min-height:100em;
+    justify-content:space-around;
+    border:10px solid mistyrose;
+}
+.container12:hover + .css12{
+    visibility: visible;
+}

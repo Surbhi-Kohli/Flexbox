@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FlexBox Tutorial</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div>
+<div class="flexDemo">  
+<h2>Flex property is block by-default</h2>
+  <div class="container">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <div class="box box4">4</div>
+    <div class="box box5">5</div>
+    <div class="box box6">6</div>
+    <div class="box box7">7</div>
+    <div class="box box8">8</div>
+    <div class="box box9">9</div>
+    <div class="box box10">10</div>
+  </div>
+  <div class="codeCss css1">
+      <code >
+       .container { 
+          display:flex; 
+        border:10px solid mistyrose;
+        }
+      </code>
+  </div>
+</div>
+<div class="flexDemo">
+  <h2>we can make the flex-container inline by using
+      flex:inline-flex
+  </h2>
+  <div class="container2">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <div class="box box4">4</div>
+    <div class="box box5">5</div>
+    <div class="box box6">6</div>
+    <div class="box box7">7</div>
+    <div class="box box8">8</div>
+    <div class="box box9">9</div>
+    <div class="box box10">10</div>
+  </div>
+  <!-- <a href="#">This flex container is inline</a> -->
+  <div class="codeCss css2">
+      <code>
+          .container{ 
+            display:inline-flex; 
+            border:10px solid goldenrod;
+           }
+      </code>
+  </div>
+</div>
+<div class="flexDemo">
+ <h2>Alignment->justify-content:flex-start</h2>
+  <div class="container3">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <div class="box box4">4</div>
+    <div class="box box5">5</div>
+    <div class="box box6">6</div>
+    <div class="box box7">7</div>
+    <div class="box box8">8</div>
+    <div class="box box9">9</div>
+    <div class="box box10">10</div>
+  </div>
+  <div class="codeCss css3">
+      <code >
+          .container{ 
+            display:flex; 
+            border:10px solid goldenrod;
+            justify-content:flex-start;
+           }
+      </code>
+  </div>
+</div>
+<div class="flexDemo">
+  <h2>Alignment->justify-content:flex-end</h2>
+  <div class="container4">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <div class="box box4">4</div>
+    <div class="box box5">5</div>
+    <div class="box box6">6</div>
+  </div>
+  <div class="codeCss css4">
+      <code >
+          .container{ 
+            display:flex; 
+            border:10px solid goldenrod;
+            justify-content:flex-end;
+           }
+      </code>
+  </div>
+</div>
+<div class="flexDemo">
+  <h2>Alignment->justify-content:center</h2>
+  <div class="container5">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <div class="box box4">4</div>
+    <div class="box box5">5</div>
+    <div class="box box6">6</div>
+  </div>
+  <div class="codeCss css5">
+      <code >
+          .container{ 
+            display:flex; 
+            border:10px solid goldenrod;
+            justify-content:center;
+           }
+      </code>
+  </div>
+</div>
+<div class="flexDemo">
+  <h2>Alignment->justify-content:space-between</h2>
+  <div class="container6">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <div class="box box4">4</div>
+    <div class="box box5">5</div>
+    <div class="box box6">6</div>
+  </div>
+  <div class="codeCss css6">
+      <code >
+          .container{ 
+            display:flex; 
+            border:10px solid goldenrod;
+            justify-content:space-between;
+           }
+      </code>
+  </div>
+</div>
+<div class="flexDemo">
+  <h2>Alignment->justify-content:space-around</h2>
+  <div class="container7">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <div class="box box4">4</div>
+    <div class="box box5">5</div>
+    <div class="box box6">6</div>
+  </div>
+  <div class="codeCss css7">
+      <code >
+          .container{ 
+            display:flex; 
+            border:10px solid goldenrod;
+            justify-content:space-around;
+           }
+      </code>
+  </div>
+</div>
+  <h1>Flex-direction:column</h1>
+  <div class="flexDemo">
+  <h2>Alignment->justify-content:flex-start</h2>
+  <div class="container8">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <div class="box box4">4</div>
+    <div class="box box5">5</div>
+    <div class="box box6">6</div>
+  </div>
+  <div class="codeCss css8">
+      <code >
+        .container{
+          display:flex; 
+          flex-direction:column;
+          min-height:100em;
+          justify-content:flex-start; 
+          border:10px solid mistyrose;
+        }
+      </code>
+  </div>
+</div>
+<div class="flexDemo">
+  <h2>Alignment->justify-content:flex-end</h2>
+  <div class="container9">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <div class="box box4">4</div>
+    <div class="box box5">5</div>
+    <div class="box box6">6</div>
+  </div>
+  <div class="codeCss css9">
+      <code >
+          .container { 
+            display:flex; 
+            flex-direction:column;
+            min-height:100em;
+            justify-content:flex-end;
+            border:10px solid goldenrod;
+        }
+      </code>
+  </div>
+</div>
+<div class="flexDemo">
+  <h2>Alignment->justify-content:center</h2>
+  <div class="container10">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <div class="box box4">4</div>
+    <div class="box box5">5</div>
+    <div class="box box6">6</div>
+  </div>
+  <div class="codeCss css10">
+      <code >
+         .container{ 
+          display:flex; 
+          flex-direction:column;
+          min-height:100em;
+          justify-content:center;
+          border:10px solid goldenrod;
+         }
+      </code>
+  </div>
+</div>
+<div class="flexDemo">
+  <h2>Alignment->justify-content:space-between</h2>
+  <div class="container11">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <div class="box box4">4</div>
+    <div class="box box5">5</div>
+    <div class="box box6">6</div>
+  </div>
+  <div class="codeCss css11">
+      <code >
+          .container{ 
+            display:flex; 
+            flex-direction:column;
+            min-height:100em;
+            justify-content:space-between;
+            border:10px solid goldenrod;
+        }
+      </code>
+  </div>
+</div>
+<div class="flexDemo">
+  <h2>Alignment->justify-content:space-around</h2>
+  <div class="container12">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <div class="box box4">4</div>
+    <div class="box box5">5</div>
+    <div class="box box6">6</div>
+  </div>
+  <div class="codeCss css12">
+      <code >
+          .container{ 
+                    display:flex; 
+            flex-direction:column;
+                 min-height:100em;
+     justify-content:space-around;
+      border:10px solid goldenrod;
+        }
+      </code>
+  </div>
+</div>
+</div>
+<script>
+let box=document.querySelector(".container2");
+console.log(box);
+box.addEventListener("mouseover",()=>{
+  console.log("hovered on container 2")
+});
+</script>
+
+</body>
+</html>
